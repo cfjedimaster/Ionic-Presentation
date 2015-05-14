@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Ionic</title>
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
+    
+        <link rel="stylesheet" href="bower_components/reveal.js/css/theme/default.css" id="theme">
+    
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css" id="highlight-theme">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+          if( window.location.search.match( /print-pdf/gi ) ) {
+            var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'bower_components/reveal.js/css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		<style>
+			.noborder {
+				border: none !important;
+				background: none !important;
+				box-shadow: none !important;
+			}
+		</style>
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+
+    			<section data-background="img/ionic-logo-side-white.png" data-background-size="20%">
+					
+				</section>            
+
+				<section>
+					<h1>Who am I?</h1>
+					<ul style="float:left;width:60%">
+						<li>Raymond Camden</li>
+						<li>Developer Advocate for IBM</li>
+						<li>Blogging at raymondcamden.com</li>
+						<li>Tweeting at @raymondcamden</li>
+						<li>That guy who used to blog about ColdFusion</li>
+					</ul>
+					<img src="img/ray.png">					
+				</section>
+				
+				<section>
+				
+					<h1>What is it?</h1>
+				
+				</section>
+				
+				<section>
+					<blockquote>
+					"The beautiful, open source front-end SDK for developing hybrid mobile apps with HTML5."
+					</blockquote>
+					<i>ionicframework.com</i>
+				</section>
+				<!--
+				<section>
+					<h1>I <i>really</i> like it</h1>
+					<div class="fragment">
+						<p>
+						History of Cool Stuff
+						</p>
+						<ul>
+							<li>1928 - Sliced Bread</li>
+							<li>2013 - Ionic</li>
+						</ul>
+					</div>
+				</section>
+				-->
+				<section>
+					<h2>What's In it?</h2>
+				</section>
+
+				<section>
+					<h2>Another UI Framework!!!!</h2>
+				</section>
+				
+				<section data-background="img/uiframework.jpg" data-background-size="33%">
+					
+				</section>
+
+				<section>
+					<h1>CLI</h1>
+				</section>
+				<section data-background="img/spock_st_freakout.jpg">
+					<h1>WTF</h1>
+				</section>
+
+				<section>
+					<h2>What's In it?</h2>
+					<ul>
+						<li class="fragment">UI components</li>
+						<li class="fragment">UX components</li>
+						<li class="fragment">SPA Framework (AngularJS)</li>
+						<li class="fragment">Built for Hybrid Mobile development (Cordova)</li>
+					</ul>
+				
+				</section>
+			
+				<section>
+					<h2>Cordova</h2>
+					<img src="img/cordova_bot.png">
+				</section>
+
+				<section data-background="img/voltron.jpg">
+					<h2 style="background:white;color:black">Cordova + Ionic</h2>
+				</section>
+
+				<section>
+					<h1>Open Source and Free</h1>
+				</section>
+				
+				<section>
+					<img src="img/ionic1.png" />
+				</section>
+
+				<section>
+					<h1>What You Need to Know</h1>
+				</section>
+				
+				<section>
+					<ul>
+						<li class="fragment">PhoneGap/Cordova</li>
+						<li class="fragment">AngularJS</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="img/spellng.png">
+				</section>
+								
+				<section>
+					<h2>Cool examples: showcase.ionicframework.com</h2>
+				</section>
+				
+				<section>
+					<h1>Installation</h1>
+				</section>
+				
+				<section>
+					<ul>
+						<li class="fragment">Zip download</li>
+						<li class="fragment">npm install</li>
+						<li class="fragment">TO BE CLEAR: It doesn't do Cordova/SDKs</li>
+					</ul>
+					<br/><br/>
+					<p class="fragment">
+					<code>sudo npm install -g ionic</code>
+					</p>
+				</section>
+				
+				<section>
+					<h1>The CLI</h1>
+				</section>
+				
+				<section>
+					<ul>
+						<li class="fragment">Creates projects</li>
+						<li class="fragment">Handle plugins, platforms</li>
+						<li class="fragment">Emulate/Run</li>
+						<li class="fragment">Build/Package</li>
+						<li class="fragment">Update library</li>
+						<li class="fragment">Serve to Browser</li>
+						<li class="fragment">Handle Icon/Splash creation</li>
+						<li class="fragment">More</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Project Creation</h2>
+					<ul>
+					<li class="fragment"><code>ionic start APPNAME</code></li>
+					<li class="fragment"><code>ionic start APPNAME TEMPLATE</code></li>
+					<li class="fragment">Templates: (can be listed from CLI)</li>
+					<li class="fragment">CodePen</li>
+					<li class="fragment">Directory</li>						
+					</ul>
+				</section>
+				
+				<!--
+				Explain the default plugins
+				show list of templates
+				show how it can reconigze and upgrade an old project
+
+				-->
+				
+				<section>
+					<h1>Demo</h1>
+				</section>
+				
+				<section>
+					<h2>Ionic Testing/Emulating/Etc</h2>
+					<ul>
+						<li class="fragment">ionic serve</li>
+						<li class="fragment">ionic emulate/run</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Demo</h1>
+				</section>
+				
+				<section>
+					<h1>CSS Components</h1>
+				</section>
+
+				<section>
+				<img src="img/css_header.png">
+				</section>
+				
+				<section>
+					<img src="img/css_button.png" style="float:left">
+					<img src="img/buttons.png" style="width:200px">
+				</section>
+				
+				<section>
+					<h1>JavaScript</h1>
+				</section>
+				
+				<section>
+					<h2>What we mean by JavaScript...</h2>
+					<ul>
+					<li class="fragment">UI stuff</li>
+					<li class="fragment">UX stuff</li>
+					<li class="fragment">Directives too!</li>
+					</ul>
+				</section>
+				
+				<section>
+				<pre><code data-trim contenteditable>
+<ion-header-bar align-title="left" class="bar-positive">
+  <h1 class="title">Title!</h1>
+</ion-header-bar>
+				</code></pre>
+				</section>
+
+				<section>
+				<pre><code data-trim contenteditable>
+<ion-slide-box on-slide-changed="slideHasChanged($index)">
+  <ion-slide>
+    <div class="box blue"><h1>BLUE</h1></div>
+  </ion-slide>
+  <ion-slide>
+    <div class="box yellow"><h1>YELLOW</h1></div>
+  </ion-slide>
+  <ion-slide>
+    <div class="box pink"><h1>PINK</h1></div>
+  </ion-slide>
+</ion-slide-box>
+</code></pre>
+				</section>
+
+				<section>
+					<img src="img/slideBox.gif">
+				</section>
+				
+				<section>
+					<h1>Demo</h1>
+				</section>
+
+				<!--
+				<section>
+					<h2>Routing</h2>
+					<ul>
+						<li>Various directives</li>
+						<li>ion-nav-view, ion-view, ion-nav-bar</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Demo</h1>
+				</section>
+				-->
+				
+				<section>
+					<h1>ngCordova</h1>
+					<ul>
+						<li class="fragment"><strong>Separate Project!</strong></li>
+						<li class="fragment">ngcordova.com</li>
+						<li class="fragment">Angularizes Cordova plugins (some core, some not)</li>
+					</ul>
+				</section>
+				
+				<section>
+				<pre><code data-trim contenteditable>
+navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+    destinationType: Camera.DestinationType.DATA_URL
+});
+
+function onSuccess(imageData) {
+    var image = document.getElementById('myImage');
+    image.src = "data:image/jpeg;base64," + imageData;
+}
+
+function onFail(message) {
+    alert('Failed because: ' + message);
+}
+				</code></pre>	
+				</section>
+
+				<section>
+				<pre><code data-trim contenteditable>
+$scope.takePicture = function() {
+    var options = { 
+        quality : 50, 
+        destinationType : Camera.DestinationType.DATA_URL, 
+    };
+
+    $cordovaCamera.getPicture(options).then(function(imageData) {
+      // Success! Image data is here
+    }, function(err) {
+      // An error occured. Show a message to the user
+    });				
+};
+				</code></pre>
+				</section>
+				
+				<section>
+				<pre><code data-trim contenteditable>
+var win = function (r) {
+    console.log("Code = " + r.responseCode);
+    console.log("Response = " + r.response);
+    console.log("Sent = " + r.bytesSent);
+}
+
+var fail = function (error) {
+    alert("An error has occurred: Code = " + error.code);
+    console.log("upload error source " + error.source);
+    console.log("upload error target " + error.target);
+}
+
+var options = new FileUploadOptions();
+options.fileKey = "file";
+options.fileName = fileURL.substr(fileURL.lastIndexOf('/') + 1);
+options.mimeType = "text/plain";
+
+var ft = new FileTransfer();
+ft.upload(fileURL, encodeURI("http://some.server.com/upload.php"), win, fail, options);				
+				</code></pre>
+				</section>
+
+				<section>
+				<pre><code data-trim contenteditable>
+var options = new FileUploadOptions();
+options.fileKey = "file";
+options.fileName = fileURL.substr(fileURL.lastIndexOf('/') + 1);
+options.mimeType = "text/plain";
+
+$cordovaFile
+    .uploadFile(server, filePath, options)
+    .then(function(result) {
+      // Success! 
+    }, function(err) {
+      // Error
+    }, function (progress) {
+      // constant progress updates
+    });
+
+});
+
+				</code></pre>	
+				</section>
+				
+				<section data-background="img/more.jpg" data-background-size="50%">
+					
+				</section>
+
+				<section>
+					<h3>Ionic Creator</h3>
+					<p>creator.ionic.io</p>
+					<img src="img/Ionic_Creator.png" class="noborder">
+				</section>
+
+				<section>
+					<h3>ionicons.com</h3>
+					<img src="img/icons.png" class="noborder">
+				</section>
+
+				<section>
+					<img src="img/ionicbox-header.png" style="max-width: 450px">
+				</section>
+				
+				<section>
+					<h2>Ionic Box</h2>
+					<ul>
+						<li>Vagrant-based install</li>
+						<li>Virtualized Android dev</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h1>Eh?</h1>
+				</section>
+				
+				<section>
+					<ol>
+						<li class="fragment">Install Vagrant (once)</li>
+						<li class="fragment">Get the Ionic Box image (once)</lii>
+						<li class="fragment">vagrant up</li>
+						<li class="fragment">#winning</li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>Icon/Splashscreen Generation</h2>
+				</section>
+
+				<section>
+					<h2>Ionic View (view.ionic.io)</h2>
+					<img src="img/ionic-view-preview-right.png" style="max-width:300px">
+				</section>
+
+				<section>
+					<h2>Playground</h2>
+					<p>
+						<a href="http://play.ionic.io/" target="_new">http://play.ionic.io/</a>
+					</p>
+				</section>
+				
+				<section>
+					<h1>Coming Soon</h1>	
+				</section>
+				
+				<section>
+					<h3>Push Service</h3>
+					<img src="img/pushlogo.png" class="noborder">
+				</section>
+
+				<section>
+					<h3>Build Service</h3>
+					<p>
+						Similar to PhoneGap Build but focused on Ionic apps.
+					</p>
+				</section>
+				
+				<section>
+					<h3>Analytic Service</h3>
+					<ul>
+						<li>Track user interaction</li>
+						<li>Heat maps</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h3>More...</h3>
+					<ul>
+						<li>Better Windows Phone support</li>
+						<li>Better support for native scrolling</li>
+						<li>Visual Studio template support</li>
+						<li>New GUI tool (super secret, shhh)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Learning More</h1>
+					<ul>
+						<li class="fragment">learn.ionicframework.com</li>
+						<li class="fragment">http://codepen.io/ionic/</li>
+						<li class="fragment">"Ionic in Action" - http://www.manning.com/wilken/ </li>
+						<li class="fragment">"Cats with Cordova" - http://www.manning.com/camden/ 
+						<ul class="fragment"><li><i>Title not final.</i></li></ul>
+						</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h1>Real App</h1>
+					<p><i>Warning - Sappy Story Coming</i></p>
+				</section>
+				
+				<section>
+					<h1>Summary</h1>
+				</section>
+			
+				<section>
+					<h1>Cordova Good</h1>
+				</section>
+
+				<section>
+					<h1>Ionic Epic</h1>
+				</section>
+			
+				<section>
+					<h1>Cordova + Ionic...</h1>
+				</section>
+			
+				<section>
+					<img src="img/trekwars.jpg" style="width:100%">
+				</section>
+			
+			</div>
+
+        </div>
+
+        <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+        <script src="bower_components/reveal.js/js/reveal.min.js"></script>
+        <script>
+            // Configure Reveal
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    // { src: 'bower_components/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    //{ src: 'bower_components/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+
+                    { src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } }
+                ]
+            });
+        </script>
+
+    </body>
+
+</html>

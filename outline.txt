@@ -1,0 +1,63 @@
+What is Ionic?
+
+Not (just) a UI framework
+
+	open source app framework - contains both UI and the architecture (angular) (mention example of list/GC, tap delay, pull to refresh)
+
+	icon set
+	
+	docs also talk best practice
+
+	support forum
+	
+What is Ionic - part 2
+	
+	wraps cordova - so made for hybrid apps
+	optimized for angularjs
+
+	ios 6+ and Android 2.3+ (4.1 recommended) only
+
+install 
+	requires npm and gulp
+	
+create
+	ionic start hello
+	
+CSS:
+Header
+Content
+Footer
+Buttons
+List
+Cards
+Forms
+Toggle
+Checkbox
+Radio Buttons
+Range
+Select
+Tabs
+Grid
+Utility
+
+JS:
+Tabs
+Side Menus
+Navigation
+Headers/Footers
+Content
+Scroll
+Lists
+Form Inputs
+Slide Box
+Modal
+Action Sheet
+Popup
+Loading
+Platform
+Gesture
+Backdrop
+Utility
+Tap & Click
+
+	
